@@ -1,3 +1,4 @@
+const { question } = require('readline-sync');
 const { convertNumber } = require('./utils/convertNumber');
 const { splitIntoPairs } = require('./utils/splitIntoPairs');
 
@@ -8,12 +9,13 @@ function decrypt(encrypted) {
     .map((number) => convertNumber(number, '-'));
 
   const decrypted = String.fromCharCode(...decryptedArr);
+  console.log(decrypted);
   return decrypted;
 }
 
+const encrypted = question('Digite o texto a ser descriptografado: ');
+decrypt(encrypted);
+
 module.exports = { decrypt };
 
-const result = decrypt('5178736979625660535367545458535556');
-console.log(result);
-
-// AVISO: Não considerar correções devido ao tempo de desafio excedido!!!
+// AVISO: Não considerar correções e atualizações devido ao tempo de desafio excedido!!!

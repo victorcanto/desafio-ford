@@ -1,3 +1,4 @@
+const { question } = require('readline-sync');
 const { convertNumber } = require('./utils/convertNumber');
 
 function encrypt(vinNumber) {
@@ -7,10 +8,13 @@ function encrypt(vinNumber) {
     .map((number) => convertNumber(number, '+')) // AVISO: Não considerar está correção de sintaxe devido ao tempo de desafio excedido!!!
     .join('');
 
+  console.log(encrypted);
   return encrypted;
 }
 
+const vinNumber = question('Digite o texto a ser criptografado: ');
+encrypt(vinNumber);
+
 module.exports = { encrypt };
 
-const result = encrypt('1HGCM82633A004352');
-console.log(result);
+// AVISO: Não considerar correções e atualizações devido ao tempo de desafio excedido!!!
