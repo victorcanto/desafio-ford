@@ -1,11 +1,10 @@
-const { question } = require('readline-sync');
 const { convertNumber } = require('./utils/convertNumber');
 
 function encripty(vinNumber) {
   const vinNumberArr = vinNumber.split('');
   const encrypted = vinNumberArr
     .map((str) => str.charCodeAt())
-    .map((number) => convertNumber(number), '+')
+    .map((number) => convertNumber(number, '+')) // AVISO: Não considerar está correção de sintaxe devido ao tempo de desafio excedido!!!
     .join('');
 
   return encrypted;
