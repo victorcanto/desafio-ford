@@ -1,17 +1,17 @@
-// const { question } = require('readline-sync');
-
 const { convertNumber } = require('./utils/convertNumber');
+const { splitIntoPairs } = require('./utils/splitIntoPairs');
 
 function decrypt(encrypted) {
-  const encryptedArr = encrypted.split('');
-  const decrypted = encryptedArr
+  const encryptedArr = splitIntoPairs(encrypted);
+  const decryptedArr = encryptedArr
     .map((strNumber) => Number(strNumber))
-    .map((number) => convertNumber(number, '-'))
-    .map((number) => String.fromCharCode(number))
-    .join('');
+    .map((number) => convertNumber(number, '-'));
 
+  const decrypted = String.fromCharCode(...decryptedArr);
   return decrypted;
 }
 
-const result = decrypt('4766696575504448494963424246495144');
+const result = decrypt('5178736979625660535367545458535556');
 console.log(result);
+
+// AVISO: Não considerar correções devido ao tempo de desafio excedido!!!
