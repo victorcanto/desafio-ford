@@ -1,5 +1,13 @@
 # Desafio Ford
 
+#### Aviso: Não considerar novos commits com correções e/ou atualizações de código devido ao tempo excedido do desafio. Considerar até o quarto commit!!!
+
+Para facilitar e visualizar o código feito até as 12:05, em seu terminal, execute:
+
+```bash
+npm run revert
+```
+
 ## Descrição
 
 Trata-se de uma aplicação de criptografia e descriptografia de um texto VIN Number.
