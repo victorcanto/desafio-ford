@@ -11,6 +11,8 @@ function decrypt(encrypted) {
   return decrypted;
 }
 
+module.exports = { decrypt };
+
 const result = decrypt('5178736979625660535367545458535556');
 console.log(result);
 
