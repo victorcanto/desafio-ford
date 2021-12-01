@@ -1,18 +1,19 @@
 # Desafio Ford
 
+
+#### Aviso: Não considerar novos commits com correções e/ou atualizações de código devido ao tempo excedido do desafio. Considerar até o quarto commit!!!
+
+Para facilitar e visualizar o código feito até as 12:05, após clonar o repositório, execute em seu terminal:
+
+```bash
+npm run revert
+```
+
 Grupo Verde
 
 <div align="center">
   <img src="https://github.com/victorcanto/desafio-ford/blob/main/src/img/green-group.png" alt="green group"/>
 </div>
-
-#### Aviso: Não considerar novos commits com correções e/ou atualizações de código devido ao tempo excedido do desafio. Considerar até o quarto commit!!!
-
-Para facilitar e visualizar o código feito até as 12:05, em seu terminal, execute:
-
-```bash
-npm run revert
-```
 
 ## Descrição
 
