@@ -1,6 +1,6 @@
 const { convertNumber } = require('./utils/convertNumber');
 
-function encripty(vinNumber) {
+function encrypt(vinNumber) {
   const vinNumberArr = vinNumber.split('');
   const encrypted = vinNumberArr
     .map((str) => str.charCodeAt())
@@ -9,5 +9,8 @@ function encripty(vinNumber) {
 
   return encrypted;
 }
-const result = encripty('1HGCM82633A004352');
+
+module.exports = { encrypt };
+
+const result = encrypt('1HGCM82633A004352');
 console.log(result);
